@@ -1,0 +1,86 @@
+Dark Material:
+  ### Theme Configuration ###
+  primary_hue: "200"
+  primary_saturation: "100%"
+  primary_lum: "50%"
+
+  secondary_hue: "50"
+  secondary_saturation: "60%"
+  secondary_lum: "40%"
+
+  surface_hue: "200"
+  surface_saturation: "0%"
+  surface_lum: "7%"
+
+  height_exaggeration: "1"
+  corner_rounding: "10px"
+
+  ### First Layer Height ###
+  initial_height: "5%"
+
+  primary-font-family: "'Open Sans','Rubik',Roboto,sans-serif"
+  paper-font-common-base_-_font-family: "var(--primary-font-family)"
+  paper-font-common-code_-_font-family: "var(--primary-font-family)"
+  paper-font-body_-_font-family: "var(--primary-font-family)"
+  paper-font-subhead_-_font-family: "var(--primary-font-family)"
+  paper-font-headline_-_font-family: "var(--primary-font-family)"
+  paper-font-caption_-_font-family: "var(--primary-font-family)"
+  paper-font-title_-_font-family: "var(--primary-font-family)"
+
+  text_emphasis_high: calc( 80% + var(--surface_lum) )
+  text_emphasis_medium: calc( 53% + var(--surface_lum) )
+  text_emphasis_low: calc( 30% + var(--surface_lum) )
+  text_emphasis_disabled: calc( 30% + var(--surface_lum) )
+
+  ha-card-border-radius: "var(--corner_rounding)"
+  ha-card-header-color: "hsl(var(--primary_hue), var(--surface_saturation), var(--text_emphasis_high))"
+  ha-card-box-shadow: "0px 0px 2px #000000"
+  app-header-background-color: "hsl(var(--surface_hue), var(--surface_saturation), calc(var(--surface_lum) - 7%))"
+  primary-color: "hsl(var(--primary_hue), calc(var(--primary_saturation) / 2), var(--text_emphasis_medium))"
+  light-primary-color: "hsl(var(--secondary_hue), calc(var(--secondary_saturation) / 2), var(--text_emphasis_medium))"
+  primary-background-color: "hsl(var(--surface_hue), var(--surface_saturation), var(--surface_lum))"
+  secondary-background-color: "hsl(var(--surface_hue), var(--surface_saturation), var(--text_emphasis_low))"
+  divider-color: "hsl(var(--surface_hue), var(--surface_saturation), calc(var(--surface_lum) + ((var(--initial_height) + 5%) * var(--height_exaggeration))))"
+  primary-text-color: "hsl(var(--primary_hue), var(--surface_saturation), var(--text_emphasis_high))"
+  secondary-text-color: "hsl(var(--primary_hue), var(--surface_saturation), var(--text_emphasis_medium))"
+  text-primary-color: "hsl(var(--primary_hue), var(--surface_saturation), var(--text_emphasis_high))"
+  disabled-text-color: "hsl(var(--primary_hue), var(--surface_saturation), var(--text_emphasis_disabled))"
+  sidebar-background-color: "hsl(var(--surface_hue), var(--surface_saturation), calc(var(--surface_lum) + ((var(--initial_height) + 4%) * var(--height_exaggeration))))"
+  sidebar-icon-color: "hsl(var(--primary_hue), var(--primary_saturation), var(--text_emphasis_low))"
+  sidebar-text-color: "hsl(var(--primary_hue), var(--surface_saturation), var(--text_emphasis_high))"
+  sidebar-selected-background-color: var(--primary-background-color)
+  sidebar-selected-icon-color: "hsl(var(--primary_hue), var(--primary_saturation), var(--primary_lum))"
+  sidebar-selected-text-color: var(--sidebar-selected-icon-color)
+  state-icon-color: "hsl(var(--primary_hue), var(--surface_saturation), var(--text_emphasis_high))"
+  state-icon-active-color: "hsl(var(--secondary_hue), var(--secondary_saturation), var(--text_emphasis_medium))"
+  state-icon-unavailable-color: var(--disabled-text-color)
+  paper-slider-knob-color: "hsl(var(--primary_hue), var(--primary_saturation), var(--primary_lum))"
+  paper-slider-knob-start-color: "hsl(var(--primary_hue), var(--primary_saturation), var(--primary_lum))"
+  paper-slider-pin-color: "hsl(var(--primary_hue), var(--primary_saturation), var(--primary_lum))"
+  paper-slider-active-color: "hsl(var(--primary_hue), var(--primary_saturation), var(--primary_lum))"
+  paper-slider-secondary-color: "hsl(var(--primary_hue), var(--surface_saturation), var(--text_emphasis_medium))"
+  paper-slider-container-color: "#a1a1a1"
+  label-badge-background-color: "hsl(var(--primary_hue), calc(var(--primary_saturation) / 2), var(--text_emphasis_low))"
+  label-badge-text-color: "hsl(var(--primary_hue), var(--surface_saturation), var(--text_emphasis_high))"
+  paper-card-background-color: "hsl(var(--surface_hue), var(--surface_saturation), calc(var(--surface_lum) + ((var(--initial_height) + 8%) * var(--height_exaggeration))))"
+  paper-listbox-background-color: "var(--sidebar-background-color)"
+  paper-item-icon-color: "hsl(var(--primary_hue), var(--primary_saturation), var(--text_emphasis_low))"
+  paper-item-icon-active-color: "hsl(var(--secondary_hue), var(--secondary_saturation), var(--text_emphasis_medium))"
+  paper-item-icon_-_color: "hsl(var(--primary_hue), calc(var(--primary_saturation) / 2), var(--text_emphasis_medium))"
+  paper-button-ink-color: "hsl(var(--primary_hue), var(--primary_saturation), var(--text_emphasis_low))"
+  paper-button-color: "hsl(var(--primary_hue), var(--primary_saturation), var(--text_emphasis_low))"
+  paper-toggle-button-checked-button-color: "hsl(var(--primary_hue), var(--primary_saturation), var(--primary_lum))"
+  paper-toggle-button-checked-bar-color: "hsl(var(--primary_hue), var(--primary_saturation), var(--primary_lum))"
+  paper-toggle-button-unchecked-button-color: "hsl(var(--primary_hue), var(--primary_saturation), var(--primary_lum))"
+  paper-toggle-button-unchecked-bar-color: "hsl(var(--primary_hue), var(--surface_saturation), var(--text_emphasis_medium))"
+  paper-dialog-background-color: "hsl(var(--surface_hue), var(--surface_saturation), calc(var(--surface_lum) + ((var(--initial_height) + 10%) * var(--height_exaggeration))))"
+  table-row-background-color: var(--primary-background-color)
+  table-row-alternative-background-color: var(--secondary-background-color)
+  data-table-background-color: var(--primary-background-color)
+  iron-overlay-backdrop-background-color: "hsl(var(--surface_hue), var(--surface_saturation), var(--surface_lum))"
+  mdc-theme-primary: "hsl(var(--primary_hue), var(--primary_saturation), var(--primary_lum))"
+  mdc-theme-secondary: "hsl(var(--secondary_hue), var(--secondary_saturation), var(--secondary_lum))"
+  switch-checked-color: "var(--paper-toggle-button-checked-button-color)"
+  switch-unchecked-button-color: "var(--paper-toggle-button-unchecked-button-color)"
+  switch-unchecked-color: "var(--paper-toggle-button-unchecked-bar-color)"
+  switch-unchecked-track-color: "var(--paper-toggle-button-unchecked-bar-color)"
